@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple technology tips, online safety advice, PC tutorials, and AI guides for beginners.">
+  <title>TechTips Hub | Simple Tech Guides</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
+    header {
+      background: #111c35;
+      color: white;
+      padding: 24px 7%;
+    }
+    header h1 { margin: 0; font-size: 30px; }
+    header p { margin-bottom: 0; color: #cbd5e1; }
+    nav {
+      background: #1d2c4d;
+      padding: 12px 7%;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+    }
+    .hero {
+      padding: 55px 7%;
+      background: linear-gradient(120deg, #dbeafe, #ede9fe);
+    }
+    .hero h2 { font-size: 36px; margin: 0 0 10px; }
+    .hero p { max-width: 600px; }
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 11px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    main { padding: 30px 7%; }
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    article {
+      background: white;
+      padding: 22px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px #1720330d;
+    }
+    article h3 { margin-top: 0; }
+    article a { color: #2563eb; font-weight: bold; }
+    .tag { color: #2563eb; font-size: 13px; font-weight: bold; }
+    .ad-area {
+      margin: 25px 0;
+      padding: 22px;
+      background: white;
+      border: 1px dashed #94a3b8;
+      border-radius: 10px;
+      text-align: center;
+      color: #64748b;
+    }
+    footer {
+      background: #111c35;
+      color: #cbd5e1;
+      padding: 25px 7%;
+      text-align: center;
+    }
+    footer a { color: white; }
+    @media (max-width: 500px) {
+      .hero h2 { font-size: 28px; }
+      nav a { display: inline-block; margin: 5px 12px 5px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💡 TechTips Hub</h1>
+    <p>Simple technology guides for everyday life.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#tips">Tech Tips</a>
+    <a href="#safety">Online Safety</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Make technology easier.</h2>
+    <p>Discover practical PC tips, useful AI tools, internet advice,
+       and online safety guides explained in simple language.</p>
+    <a class="button" href="#tips">Explore the tips</a>
+  </section>
+
+  <main>
+    <h2 id="tips">Latest Tech Guides</h2>
+    <p>Beginner-friendly articles to help you get more from your technology.</p>
+
+    <div class="ad-area">
+      <strong>Advertisement space</strong>
+      <p>Your approved ad code can go here later.</p>
+    </div>
+
+    <div class="articles">
+      <article>
+        <span class="tag">COMPUTER TIPS</span>
+        <h3>5 Ways to Make Your PC Feel Faster</h3>
+        <p>Learn simple ways to free up storage, manage startup apps,
+           and keep your computer running smoothly.</p>
+        <a href="#pc-guide">Read the guide ↓</a>
+      </article>
+
+      <article id="safety">
+        <span class="tag">ONLINE SAFETY</span>
+        <h3>How to Spot a Fake Website</h3>
+        <p>Check website addresses, recognize suspicious offers,
+           and protect your personal information online.</p>
+        <a href="#safety-guide">Read the guide ↓</a>
+      </article>
+
+      <article>
+        <span class="tag">ARTIFICIAL INTELLIGENCE</span>
+        <h3>How to Use AI as a Beginner</h3>
+        <p>Discover how to write better prompts and use AI tools
+           for studying, planning, and creative projects.</p>
+        <a href="#ai-guide">Read the guide ↓</a>
+      </article>
+    </div>
+
+    <section id="pc-guide">
+      <h2>Quick PC Tip</h2>
+      <p>Open Task Manager with <strong>Ctrl + Shift + Esc</strong>
+         to check which apps are using your computer's resources.
+         Only disable startup apps you recognize and do not need.</p>
+    </section>
+
+    <section id="safety-guide">
+      <h2>Stay Safe Online</h2>
+      <p>Before entering a password or payment information, check
+         the website address carefully. HTTPS alone does not prove
+         that a website is trustworthy. Never share verification codes
+         with someone who contacts you unexpectedly.</p>
+    </section>
+
+    <section id="ai-guide">
+      <h2>Get Better Results from AI</h2>
+      <p>Explain your goal, give useful context, and ask for the
+         format you want. Avoid entering passwords or private
+         personal information into AI tools.</p>
+    </section>
+
+    <section id="about">
+      <h2>About TechTips Hub</h2>
+      <p>TechTips Hub is a beginner-friendly project sharing
+         practical technology knowledge in clear, simple language.</p>
+    </section>
+
+    <div class="ad-area">
+      <strong>Advertisement space</strong>
+      <p>Reserved for a second ad placement if approved.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 TechTips Hub. Built for curious learners.</p>
+    <p>Technology tips made simple.</p>
+  </footer>
+</body>
+</html>
