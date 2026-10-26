@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -221,5 +222,36 @@
     <p>© 2026 TechTips Hub. Built for curious learners.</p>
     <p>Technology tips made simple.</p>
   </footer>
+
+  <!-- 60-second timer; does not refresh the ads -->
+  <div id="page-timer" role="status" aria-live="polite"
+       style="position:fixed;bottom:12px;right:12px;
+       background:#111c35;color:white;padding:10px 14px;
+       border-radius:8px;font:14px Arial,sans-serif;
+       z-index:9999;box-shadow:0 3px 12px #0003;">
+    Timer: 60 seconds
+  </div>
+
+  <script>
+    (() => {
+      if (window.techTipsTimerStarted) return;
+      window.techTipsTimerStarted = true;
+
+      let remaining = 60;
+      const display = document.getElementById("page-timer");
+      if (!display) return;
+
+      const timer = window.setInterval(() => {
+        remaining -= 1;
+
+        if (remaining > 0) {
+          display.textContent = `Timer: ${remaining} seconds`;
+        } else {
+          window.clearInterval(timer);
+          display.textContent = "60 seconds completed";
+        }
+      }, 1000);
+    })();
+  </script>
 </body>
 </html>
